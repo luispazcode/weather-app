@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App - Lupacode</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body
+		class="w-full h=full bg-gradient-to-r from-[#5936b4] to-[#362A84] font-roboto"
+	>
+		<header>
+			<h1 class="text-4xl font-normal text-center py-5 text-white">
+				Weather App
+			</h1>
+		</header>
+		<main>
+			<div class="container mx-auto">
+				<div
+					class="relative w-4/5 mx-auto flex justify-between items-center py-4 gap-4"
+				>
+					<input
+						type="text"
+						name="city"
+						id="city"
+						placeholder="Enter city name"
+						class="input-search w-100 py-2 px-3 bg-white border border-slate-300 rounded-md grow"
+					/>
+					<button
+						class="button-search bg-violet-500 hover:bg-violet-700 text-white px-4 py-2 rounded-lg"
+						type="submit"
+					>
+						Buscar
+					</button>
+				</div>
+			</div>
+			<section class="results container mx-auto my-4 text-white">
+				<div class="relative text-center flex flex-col justify-center">
+					<h3 class="city text-4xl"></h3>
+					<span class="temperature text-8xl"></span>
+					<span class="weather text-xl block font-semibold"></span>
+					<p class="localtime text-sm"></p>
+					<div class="relative mt-5">
+						<img src="" alt="img-weather" class="icon mx-auto w-20" />
+					</div>
+				</div>
+			</section>
+		</main>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
